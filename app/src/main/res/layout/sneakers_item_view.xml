@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:animateLayoutChanges="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cardview_release_date"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="#F6F6F6"
+                    android:textStyle="bold"
+                    tools:text="14 Noviembre" />
+            <TextView
+                android:id="@+id/cardview_price"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="40dp"
+                android:shadowColor="#F6F6F6"
+                android:textStyle="bold"
+                tools:text="200€" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cardview_imgview"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                tools:src="@drawable/ic_profile" />
+
+            <TextView
+                android:id="@+id/cardview_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:shadowColor="#F6F6F6"
+                android:textStyle="bold"
+                tools:text="Esto es una prueba" />
+
+            <TextView
+                android:id="@+id/cardview_description"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                tools:text="Estamos probando esta opción para incluir texto donde" />
+
+        </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

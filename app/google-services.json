@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "465935748249",
+    "project_id": "hypebeast-a39b7",
+    "storage_bucket": "hypebeast-a39b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465935748249:android:c35b6f107a257bbe543c08",
+        "android_client_info": {
+          "package_name": "com.example.hypebeast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465935748249-5g7l60ii1c7qfrbp9nfsoigh6b2sfe16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-XC70mVoWQAsGoliX-ODBYi6TyCNN-p4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465935748249-5g7l60ii1c7qfrbp9nfsoigh6b2sfe16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,12 +7,6 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-
-   <FrameLayout
-      android:id="@+id/fl_wrapper"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_above="@id/bottom_navigation"/>
    <com.google.android.material.bottomnavigation.BottomNavigationView
        android:id="@+id/bottom_navigation"
        android:layout_width="match_parent"
@@ -24,12 +18,13 @@
       app:itemTextColor="#fff"
       app:menu="@menu/nav_menu" />
 
-   <androidx.fragment.app.FragmentContainerView
-       android:id="@+id/nav_host_fragment"
+   <fragment
+       android:id="@+id/fragments"
        android:name="androidx.navigation.fragment.NavHostFragment"
        android:layout_width="match_parent"
-       android:layout_height="630dp"
+       android:layout_height="match_parent"
        app:defaultNavHost="true"
        app:navGraph="@navigation/main_graph" />
+
 
 </RelativeLayout>

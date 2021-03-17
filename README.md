@@ -4,7 +4,7 @@ This project was born from being passionate about hypebeast and programming💻�
 It is developed with MVVM and developing a backend with firebase
 &nbsp;
 
-📚 Libraries we use
+##📚 Libraries we use
 - [Firebase](https://firebase.google.com/?hl=es "Firebase")
 - [Glide](https://github.com/bumptech/glide "Glide")
 - [Play services coroutines](https://github.com/Kotlin/kotlinx.coroutines "Play services coroutines")

@@ -1,7 +1,7 @@
 # HYPEBEAST
 This project was born from being passionate about hypebeast and programming💻👟
-It is currently still under development
-It is developed with MVVM and developing a backend with firebase
+####It is currently still under development
+####It is developed with MVVM and developing a backend with firebase
 
 ##📚 Libraries we use
 - [Firebase](https://firebase.google.com/?hl=es "Firebase")

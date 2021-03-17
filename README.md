@@ -1,10 +1,10 @@
 # HYPEBEAST
 This project was born from being passionate about hypebeast and programming💻👟
-#### It is currently still under development
+It is currently still under development
 It is developed with MVVM and developing a backend with firebase
 
+## Libraries we use
 
-##📚 Libraries we use
 - [Firebase](https://firebase.google.com/?hl=es "Firebase")
 - [Glide](https://github.com/bumptech/glide "Glide")
 - [Play services coroutines](https://github.com/Kotlin/kotlinx.coroutines "Play services coroutines")
@@ -16,3 +16,4 @@ It is developed with MVVM and developing a backend with firebase
 ## 📷Screenshots
 ![](https://postimg.cc/9rfvtKjz)
 ![](https://postimg.cc/phxS91ZWf)
+![](https://postimg.cc/F1rqN8zG)

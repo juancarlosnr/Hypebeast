@@ -13,5 +13,6 @@ It is developed with MVVM and developing a backend with firebase
 - [Cardview](https://developer.android.com/guide/topics/ui/layout/cardview?hl=es-419 "Cardview")
 - [Android Material](https://material.io/develop/android/docs/getting-started "Android Material")
 
-## 📷Screenshots
-### Soon...
+## 📷Screenshot
+![](https://i.ibb.co/4SBdj8g/1.png)
+![](https://i.ibb.co/r3QDsgW/3.png)

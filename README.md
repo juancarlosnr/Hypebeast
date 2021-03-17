@@ -14,6 +14,5 @@ It is developed with MVVM and developing a backend with firebase
 - [Android Material](https://material.io/develop/android/docs/getting-started "Android Material")
 
 ## 📷Screenshots
-![](https://postimg.cc/9rfvtKjz)
-![](https://postimg.cc/phxS91ZWf)
+[![Android](https://imgur.com/a/FRzmTrx)]()
 ![](https://postimg.cc/F1rqN8zG)

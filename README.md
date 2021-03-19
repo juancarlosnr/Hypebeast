@@ -14,8 +14,10 @@ It is developed with MVVM and developing a backend with firebase
 - [Android Material](https://material.io/develop/android/docs/getting-started "Android Material")
 
 ## Design made with figma
-![](https://i.ibb.co/TTpW0P0/Pantallas-Principales.png)
-![](https://i.ibb.co/hmVF2YJ/Pantallas-Registros.png)
-
+<p align="center">
+   <img src="https://i.ibb.co/hmVF2YJ/Pantallas-Registros.png" width="800" >
+  <img src="https://i.ibb.co/TTpW0P0/Pantallas-Principales.png" width="800">
+ 
+</p>
 ## 📷Screenshot
 # Soon

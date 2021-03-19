@@ -17,6 +17,8 @@ It is developed with MVVM and developing a backend with firebase
 <p align="center">
    <img src="https://i.ibb.co/hmVF2YJ/Pantallas-Registros.png" width="800" >
   <img src="https://i.ibb.co/TTpW0P0/Pantallas-Principales.png" width="800">
+  <img src="https://i.ibb.co/BVDpx1X/Pantallas-Secundarias.png" width="800">
+  <img src="https://i.ibb.co/DG4yXck/Splash-Screen.png" width="800">
  
 
 ## 📷Screenshot

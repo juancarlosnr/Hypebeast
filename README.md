@@ -15,7 +15,7 @@ It is developed with MVVM and developing a backend with firebase
 
 ## Design made with figma
 ![](https://i.ibb.co/hmVF2YJ/Pantallas-Registros.png)
-|[](https://i.ibb.co/TTpW0P0/Pantallas-Principales.png)
+![](https://i.ibb.co/TTpW0P0/Pantallas-Principales.png)
 
 ## 📷Screenshot
 # Soon

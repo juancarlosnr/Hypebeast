@@ -12,6 +12,7 @@ It is developed with MVVM and developing a backend with firebase
 - [Navegation Components](https://developer.android.com/guide/navigation/navigation-getting-started "Navegation Components")
 - [Cardview](https://developer.android.com/guide/topics/ui/layout/cardview?hl=es-419 "Cardview")
 - [Android Material](https://material.io/develop/android/docs/getting-started "Android Material")
+- [Circle Image View](https://github.com/hdodenhof/CircleImageView)
 
 ## Design made with figma
 <p align="center">

@@ -23,7 +23,11 @@
         android:id="@+id/sneakersFragment"
         android:name="com.example.hypebeast.ui.sneakers.SneakersFragment"
         android:label="fragment_sneakers"
-        tools:layout="@layout/fragment_sneakers" />
+        tools:layout="@layout/fragment_sneakers" >
+        <action
+            android:id="@+id/action_sneakersFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.hypebeast.ui.auth.LoginFragment"
@@ -51,7 +55,31 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.hypebeast.ui.SettingsFragment"
+        android:name="com.example.hypebeast.ui.settings.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.hypebeast.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="sneakers_picture"
+            app:argType="string" />
+        <argument
+            android:name="sneakers_title"
+            app:argType="string" />
+        <argument
+            android:name="sneakers_releasedate"
+            app:argType="string" />
+        <argument
+            android:name="sneakers_description"
+            app:argType="string" />
+        <argument
+            android:name="sneakers_releaseprice"
+            app:argType="string" />
+        <argument
+            android:name="sneakers_resellprice"
+            app:argType="string" />
+    </fragment>
 </navigation>

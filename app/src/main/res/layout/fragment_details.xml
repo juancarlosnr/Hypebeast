@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.details.DetailsFragment"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:src="@drawable/img_back2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/mulish_main"
+        android:text="AIR JORDAN 1 UNIVERSITY BLUE"
+        android:textColor="#18B61E"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main" />
+
+    <TextView
+        android:id="@+id/tv_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mulish_main"
+        android:text="Fecha de lanzamiento: 20-05-2021"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="363dp"
+        android:layout_height="182dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/mulish_main"
+        android:text="Los tonos familiares de los Air Jordan 1 se diseñaron en una combinación de colores clásica estilo bloques de color. El modelo incluye cuero auténtico en azul universitario en el tobillo, el talón, la punta y la suela, mientras que el Swoosh y el cuello lucen un tono negro en contraste con el blanco del panel lateral, la entresuela, la lengüeta y la zona perforada de la punta. El logotipo Wings en negro y el diseño de la marca en azul universitario en la lengüeta aportan el toque final a los detalles clásicos e impecables de este calzado."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_release" />
+
+    <TextView
+        android:id="@+id/tv_releaseprice"
+        android:layout_width="182dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/mulish_main"
+        android:text="Precio lanzamiento: 180$"
+        android:textColor="#18B61E"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+    <TextView
+        android:id="@+id/tv_resellprice"
+        android:layout_width="142dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mulish_main"
+        android:text="Precio reventa:300$"
+        android:textColor="#18B61E"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/tv_releaseprice"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

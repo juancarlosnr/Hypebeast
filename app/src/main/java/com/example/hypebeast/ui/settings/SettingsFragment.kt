@@ -1,4 +1,4 @@
-package com.example.hypebeast.ui
+package com.example.hypebeast.ui.settings
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,7 +11,5 @@ import com.example.hypebeast.R
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
     }
 }

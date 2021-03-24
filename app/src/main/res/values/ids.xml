@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_input_layout_username" type="id" />
+    <item name="text_input_layout_password" type="id" />
+    <item name="text_input_layout_confirm_password" type="id" />
+</resources>

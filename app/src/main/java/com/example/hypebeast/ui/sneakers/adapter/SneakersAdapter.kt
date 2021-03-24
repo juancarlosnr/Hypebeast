@@ -29,9 +29,6 @@ class SneakersAdapter(private val sneakerslist: List<sneakers>):RecyclerView.Ada
         override fun bind(item: sneakers) {
             Glide.with(context).load(item.sneakers_picture).centerCrop().into(binding.cardviewImgview)
             binding.cardviewTitle.text = item.sneakers_title
-            binding.cardviewDescription.text = item.sneakers_description
-            binding.cardviewReleaseDate.text = item.sneakers_releasedate
-            binding.cardviewPrice.text = item.sneakers_price
         }
     }
 }

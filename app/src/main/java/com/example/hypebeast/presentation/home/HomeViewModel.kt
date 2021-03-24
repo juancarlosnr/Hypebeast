@@ -3,18 +3,18 @@ package com.example.hypebeast.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.liveData
-import com.example.hypebeast.core.Resource
+import com.example.hypebeast.core.Result
 import com.example.hypebeast.domain.home.HomeRepo
 import kotlinx.coroutines.Dispatchers
 import java.lang.Exception
 
 class HomeViewModel(private val repo: HomeRepo): ViewModel() {
     fun fecthLatestNews() = liveData(Dispatchers.IO) {
-        emit(Resource.Loading())
+        emit(Result.Loading())
         try {
             emit(repo.getLatestNews())
         }catch (e:Exception){
-            emit(Resource.Failure(e))
+            emit(Result.Failure(e))
         }
     }
 }

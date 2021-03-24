@@ -12,8 +12,7 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
       android:layout_alignParentBottom="true"
-      android:background="?android:attr/windowBackground"
-      app:itemBackground="@color/purple_500"
+      app:itemBackground="@drawable/gradient_main"
       app:itemIconTint="#fff"
       app:itemTextColor="#fff"
       app:menu="@menu/nav_menu" />
@@ -23,6 +22,10 @@
        android:name="androidx.navigation.fragment.NavHostFragment"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginStart="2dp"
+       android:layout_marginTop="1dp"
        app:defaultNavHost="true"
        app:navGraph="@navigation/main_graph" />
 

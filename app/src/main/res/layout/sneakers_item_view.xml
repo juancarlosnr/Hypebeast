@@ -5,61 +5,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-   android:animateLayoutChanges="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/cardview_release_date"
-                    android:layout_width="202dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:shadowColor="#F6F6F6"
-                    android:textStyle="bold"
-                    tools:text="14 Noviembre" />
-            <TextView
-                android:id="@+id/cardview_price"
-                android:layout_width="137dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginStart="40dp"
-                android:shadowColor="#F6F6F6"
-                android:textStyle="bold"
-                tools:text="200€" />
-            </LinearLayout>
 
             <ImageView
                 android:id="@+id/cardview_imgview"
-                android:layout_width="match_parent"
-                android:layout_height="186dp"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
                 tools:src="@drawable/ic_profile" />
 
             <TextView
                 android:id="@+id/cardview_title"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_width="160dp"
+                android:layout_height="56dp"
+                android:background="@drawable/gradient_main"
                 android:gravity="center"
+                android:fontFamily="@font/mulish_main"
                 android:shadowColor="#F6F6F6"
+                android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                tools:text="Esto es una prueba" />
-
-            <TextView
-                android:id="@+id/cardview_description"
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:gravity="center"
-                android:textSize="10sp"
-                tools:text="Estamos probando esta opción para incluir texto donde" />
+                tools:text="NIKE AIR JORDAN 1 SUPREME" />
 
         </LinearLayout>
 

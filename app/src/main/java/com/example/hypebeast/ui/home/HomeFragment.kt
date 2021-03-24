@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.hypebeast.R
-import com.example.hypebeast.core.Resource
+import com.example.hypebeast.core.Result
 import com.example.hypebeast.data.remote.home.HomeDataSource
 import com.example.hypebeast.databinding.FragmentHomeBinding
 import com.example.hypebeast.domain.home.HomeRepoImpl
@@ -33,14 +33,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         viewModel.fecthLatestNews().observe(viewLifecycleOwner, Observer { result ->
             when (result) {
-                is Resource.Loading -> {
+                is Result.Loading -> {
                     binding.progressBar.visibility = View.VISIBLE
                 }
-                is Resource.Sucess -> {
+                is Result.Sucess -> {
                     binding.progressBar.visibility = View.GONE
                     binding.rvHome.adapter = HomeAdapter(result.data)
                 }
-                is Resource.Failure ->{
+                is Result.Failure ->{
                     binding.progressBar.visibility = View.GONE
                     Toast.makeText(requireContext(), "Ocurrio un error ${result.exception}", Toast.LENGTH_SHORT).show()
                 }

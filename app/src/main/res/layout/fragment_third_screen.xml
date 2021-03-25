@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.onBoarding.screens.FirstScreen">
+
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="259dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/icon_onboard_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/mulish_main"
+        android:text="PERFIL"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="265dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/mulish_main"
+        android:textAlignment="center"
+        android:text="Ten tu propio perfil de hypebeast y disfruta de poder guardar tu ropa o sneakers favoritos en tu perfil para tenerlos siempre a tu alcance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="24dp"
+        android:text="Finalizar"
+        android:textColor="#18B61E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_previous"
+        android:layout_width="84dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="20dp"
+        android:text="Anterior"
+        android:textColor="#18B61E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

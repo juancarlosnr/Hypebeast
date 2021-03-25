@@ -1,8 +1,10 @@
 package com.example.hypebeast.ui.auth
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -38,6 +40,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
         }
     }
+
 
     private fun doLogin(){
         binding.btnSignIn.setOnClickListener {

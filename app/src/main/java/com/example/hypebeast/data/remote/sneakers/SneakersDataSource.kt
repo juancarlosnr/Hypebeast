@@ -10,6 +10,7 @@ class SneakersDataSource {
     suspend fun getLatestSneakers(): Result<List<sneakers>> {
         val sneakersList = mutableListOf<sneakers>()
         val querySnapshot = FirebaseFirestore.getInstance().collection("sneakers").get().await()
+
         for (sneaker in querySnapshot.documents){
             sneaker.toObject(sneakers::class.java)?.let { sneakers ->
                 sneakersList.add(sneakers)

@@ -1,8 +1,7 @@
 package com.example.hypebeast.ui.sneakers
 
 import android.os.Bundle
-import android.text.Layout
-import android.util.Log
+
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
@@ -22,9 +21,11 @@ import com.example.hypebeast.presentation.sneakers.SneakersViewModelFactory
 import com.example.hypebeast.ui.auth.RegisterFragment
 import com.example.hypebeast.ui.details.DetailsFragment
 import com.example.hypebeast.ui.sneakers.adapter.SneakersAdapter
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 
-class SneakersFragment : Fragment(R.layout.fragment_sneakers), SneakersAdapter.OnSneakerClickListener {
+class SneakersFragment : Fragment(R.layout.fragment_sneakers), SneakersAdapter.OnSneakerClickListener, SneakersAdapter.OnFavouritesClickListener {
 
     private lateinit var binding: FragmentSneakersBinding
     private var gridLayoutManager: GridLayoutManager? = null
@@ -46,7 +47,9 @@ class SneakersFragment : Fragment(R.layout.fragment_sneakers), SneakersAdapter.O
                     binding.progressBar.visibility = View.GONE
                     binding.rvSneakers.layoutManager = gridLayoutManager
                     binding.rvSneakers.setHasFixedSize(true)
-                    binding.rvSneakers.adapter = SneakersAdapter(result.data, this@SneakersFragment)
+                    binding.rvSneakers.adapter = SneakersAdapter(result.data, this@SneakersFragment, this@SneakersFragment)
+
+
                 }
                 is Result.Failure ->{
                     binding.progressBar.visibility = View.GONE
@@ -57,6 +60,8 @@ class SneakersFragment : Fragment(R.layout.fragment_sneakers), SneakersAdapter.O
     }
 
     override fun onSneakerClick(sneakers: sneakers) {
+
+
         val action = SneakersFragmentDirections.actionSneakersFragmentToDetailsFragment(
             sneakers.sneakers_picture,
             sneakers.sneakers_title,
@@ -66,5 +71,14 @@ class SneakersFragment : Fragment(R.layout.fragment_sneakers), SneakersAdapter.O
             sneakers.sneakers_resellprice
         )
             findNavController().navigate(action)
+    }
+
+    override fun onFavouritesCliclLister(sneakers: sneakers) {
+
+        val uid = FirebaseAuth.getInstance().uid
+        val db = FirebaseFirestore.getInstance().document("")
+        //db.collection("users").document("$uid").set(Favourites("${sneakers.sneakers_picture}", "${sneakers.sneakers_title}"))
+        db.collection("users").document("$uid").update("favorites_id", arrayListOf(sneakers.sneakers_id))
+
     }
 }

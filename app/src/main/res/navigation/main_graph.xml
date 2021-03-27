@@ -67,9 +67,6 @@
             android:name="sneakers_picture"
             app:argType="string" />
         <argument
-            android:name="sneakers_title"
-            app:argType="string" />
-        <argument
             android:name="sneakers_releasedate"
             app:argType="string" />
         <argument
@@ -80,6 +77,9 @@
             app:argType="string" />
         <argument
             android:name="sneakers_resellprice"
+            app:argType="string" />
+        <argument
+            android:name="sneakers_title"
             app:argType="string" />
     </fragment>
     <fragment

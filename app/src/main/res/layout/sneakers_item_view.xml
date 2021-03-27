@@ -34,6 +34,14 @@
                 android:textStyle="bold"
                 tools:text="NIKE AIR JORDAN 1 SUPREME" />
 
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/purple_200"
+                android:layout_gravity="center"
+                app:icon="@drawable/ic_notis" />
+
         </LinearLayout>
 
 
